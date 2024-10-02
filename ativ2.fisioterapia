@@ -1,0 +1,20 @@
+package Ativpolimorfismo;
+
+public class Fisioterapeuta extends Profissionalidade {
+		
+	private String crefito;
+	
+	public Fisioterapeuta (String nome, String especialidade, int valorconsulta) {
+	    super(nome, especialidade, valorconsulta);
+	}
+	public String getcrefito() {
+		return crefito;
+	}
+	public void crefito(String crefito) {
+		this.crefito = crefito;
+	}		
+	@Override
+	public void agendarConsulta() {
+	System.out.println("Consulta de fisioterapia agendada. Valor: R$" + getvalorconsulta() + " Com o DR." + getnome());
+	}
+}

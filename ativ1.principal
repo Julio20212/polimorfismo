@@ -1,0 +1,24 @@
+package Ativpolimorfismo;
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+	Funcionario fun = new Funcionario (1, "Joaquim", "15-1234-5678", 123, "Rua Y");
+	System.out.println(fun.getnome());
+	System.out.println (fun.calculo(10000.00, 1000));
+	
+	Horista hor = new Horista (2, "Pedro", "11-9989-7766", 1234, "Rua X");
+	System.out.println(hor.getnome());
+	System.out.println(hor.calculo(100, 200));
+	
+	Jornada jor = new Jornada (3, "Amaral", "15-5544-3322", 12345, "Rua Y");
+	System.out.println(jor.getnome());
+	System.out.println(jor.calculo(150, 220));
+	
+	Consultor con = new Consultor (4, "Rubian", "15-1122-3344", 123456, "Rua W");
+	System.out.println(jor.getnome());
+	System.out.println(jor.calculo(40000, 5000));
+	}
+	
+}

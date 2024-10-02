@@ -1,0 +1,20 @@
+package Ativpolimorfismo;
+
+public class Dentista extends Profissionalidade {
+	
+	private String cro;
+
+	public Dentista (String nome, String especialidade, int valorconsulta) {
+	    super(nome, especialidade, valorconsulta);
+	}
+	public String getcro() {
+		return cro;
+	}
+	public void cro(String cro) {
+		this.cro = cro;
+	}	
+	@Override
+	public void agendarConsulta() {
+	System.out.println("Consulta de dentista agendada. Valor: R$" + getvalorconsulta() + " Com o DR." + getnome());
+	}
+}

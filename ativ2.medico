@@ -1,0 +1,20 @@
+package Ativpolimorfismo;
+
+public class Medico extends Profissionalidade{
+
+	private String crm;
+
+	public Medico (String nome, String especialidade, int valorconsulta) {
+	    super(nome, especialidade, valorconsulta);
+	}
+	public String getcrm() {
+		return crm;
+	}
+	public void crm(String crm) {
+		this.crm = crm;
+	}	
+	@Override
+	public void agendarConsulta() {
+	System.out.println("Consulta médica agendada. Valor: R$" + getvalorconsulta() + " Com o DR." + getnome());
+	}
+}

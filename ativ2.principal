@@ -1,0 +1,19 @@
+package Ativpolimorfismo;
+
+public class Principal2 {
+
+	public static void main(String[] args) {
+		
+	Fisioterapeuta fisio = new Fisioterapeuta ("Marcos", "Fisioterapeuta:", 150 );
+	System.out.println(fisio.getespecialidade());
+	fisio.agendarConsulta();
+		
+	Dentista dent = new Dentista ("Felipe", "Dentista:", 200);
+	System.out.println(dent.getespecialidade());
+	dent.agendarConsulta();
+		
+	Medico med = new Medico ("Rubian", "Médico:", 350);
+	System.out.println(med.getespecialidade());
+	med.agendarConsulta();
+	}
+}

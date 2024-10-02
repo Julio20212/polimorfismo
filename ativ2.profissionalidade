@@ -1,0 +1,34 @@
+package Ativpolimorfismo;
+
+public class Profissionalidade {
+	
+	private String nome;
+	private String especialidade;
+	private int valorconsulta;
+		
+	public Profissionalidade (String nome, String especialidade, int valorconsulta) {
+		this.nome = nome;
+		this.especialidade = especialidade;
+		this.valorconsulta = valorconsulta;
+	}
+	public void agendarConsulta() {
+	}
+	public String getnome() {
+		return nome;
+	}
+	public void setnome(String nome) {
+		this.nome = nome;
+	}
+	public String getespecialidade() {
+		return especialidade;
+	}
+	public void setespecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
+	public int getvalorconsulta() {
+		return valorconsulta;
+	}
+	public void valorconsulta(int valorconsulta) {
+		this.valorconsulta = valorconsulta;
+	}		
+}
